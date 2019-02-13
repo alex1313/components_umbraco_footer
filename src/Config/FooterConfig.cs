@@ -1,4 +1,4 @@
-namespace Graph.Components.Navigation
+namespace Graph.Components.Footer
 {
 	public static class FooterConfig
 	{

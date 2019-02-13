@@ -2,7 +2,7 @@ using System;
 using System.Reflection;
 using Zone.UmbracoMapper;
 
-namespace Graph.Components.Navigation
+namespace Graph.Components.Footer
 {
 	public class FooterModel
 	{
@@ -28,8 +28,9 @@ namespace Graph.Components.Navigation
 		[PropertyMapping(SourceProperty = FooterConfig.YouTubeFieldAlias)]
 		public string YouTube { get; set; }
 
+		[MultilineText]
 		[PropertyMapping(SourceProperty = FooterConfig.CopyrightTextFieldAlias)]
-		public string CopyrightText{ get; set; }
+		public string CopyrightText { get; set; }
 	}
 
 	[AttributeUsage(AttributeTargets.Property)]

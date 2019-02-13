@@ -1,4 +1,4 @@
-@model Graph.Components.Navigation.FooterModel
+@model Graph.Components.Footer.FooterModel
 
 @Html.Raw(Model.Address)
 
@@ -42,7 +42,4 @@
 	@Model.YouTube
 }
 
-@if (string.IsNullOrEmpty(Model.CopyrightText) == false)
-{
-	@Model.CopyrightText
-}
+@Html.Raw(Model.CopyrightText)
