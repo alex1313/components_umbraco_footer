@@ -1,5 +1,6 @@
 using System;
 using System.Reflection;
+using Umbraco.Web.Models;
 using Zone.UmbracoMapper;
 
 namespace Graph.Components.Footer
@@ -31,6 +32,9 @@ namespace Graph.Components.Footer
 		[MultilineText]
 		[PropertyMapping(SourceProperty = FooterConfig.CopyrightTextFieldAlias)]
 		public string CopyrightText { get; set; }
+
+		[PropertyMapping(SourceProperty = FooterConfig.PagesFieldAlias)]
+		public RelatedLinks Pages { get;set; }
 	}
 
 	[AttributeUsage(AttributeTargets.Property)]

@@ -35,5 +35,8 @@ namespace Graph.Components.Footer
 
 		[Property(TypeName = PropertyTypes.Textarea, Name = "Copyright text", TabName = "Content", Alias = FooterConfig.CopyrightTextFieldAlias)]
 		public string CopyrightText { get; set; }
+
+		[Property(TypeName = PropertyTypes.RelatedLinks, Name = "Pages", TabName = "Content", Alias = FooterConfig.PagesFieldAlias)]
+		public string Pages { get; set; }
 	}
 }

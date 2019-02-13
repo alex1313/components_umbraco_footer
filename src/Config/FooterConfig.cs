@@ -17,5 +17,6 @@ namespace Graph.Components.Footer
 		public const string YouTubeFieldAlias = "youTube";
 
 		public const string CopyrightTextFieldAlias = "copyrightText";
+		public const string PagesFieldAlias = "pages";
 	}
 }

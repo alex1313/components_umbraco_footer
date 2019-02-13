@@ -43,3 +43,8 @@
 }
 
 @Html.Raw(Model.CopyrightText)
+
+@foreach (var pageLink in Model.Pages)
+{
+	<a href="@pageLink.Link">@pageLink.Caption</a>
+}
